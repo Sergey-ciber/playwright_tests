@@ -1,0 +1,17 @@
+{
+  "name": "lessons_playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.2",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "3.9.9"
+  }
+}
