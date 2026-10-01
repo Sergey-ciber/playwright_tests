@@ -1,9 +1,20 @@
-import { expect, test } from '@playwright/test';
+import { expect, Locator, Page, test } from '@playwright/test';
+
+// Интерфейс для создания объектов с типом element
+interface Elements {
+  locator: (page: Page) => Locator;
+  name: string;
+  text?: string;
+  attribute?: {
+    type: string;
+    value: string;
+  };
+}
 
 // Вынос локаторов в отдельный массив объектов
-const elements = [
+const elements: Elements[] = [
   {
-    locator: (page) => page.getByRole('link', { name: 'Playwright logo Playwright' }),
+    locator: (page: Page): Locator => page.getByRole('link', { name: 'Playwright logo Playwright' }),
     name: 'Playwright logo link',
     text: 'Playwright',
     attribute: {
@@ -13,7 +24,7 @@ const elements = [
   },
 
   {
-    locator: (page) => page.getByRole('link', { name: 'Docs' }),
+    locator: (page: Page): Locator => page.getByRole('link', { name: 'Docs' }),
     name: 'Docs link',
     text: 'Docs',
     attribute: {
@@ -23,7 +34,7 @@ const elements = [
   },
 
   {
-    locator: (page) => page.getByRole('link', { name: 'MCP', exact: true }),
+    locator: (page: Page): Locator => page.getByRole('link', { name: 'MCP', exact: true }),
     name: 'MCP link',
     text: 'MCP',
     attribute: {
@@ -33,7 +44,7 @@ const elements = [
   },
 
   {
-    locator: (page) => page.getByRole('link', { name: 'CLI', exact: true }),
+    locator: (page: Page): Locator => page.getByRole('link', { name: 'CLI', exact: true }),
     name: 'CLI link',
     text: 'CLI',
     attribute: {
@@ -43,7 +54,7 @@ const elements = [
   },
 
   {
-    locator: (page) => page.getByRole('link', { name: 'API' }),
+    locator: (page: Page): Locator => page.getByRole('link', { name: 'API' }),
     name: 'API link',
     text: 'API',
     attribute: {
@@ -53,12 +64,12 @@ const elements = [
   },
 
   {
-    locator: (page) => page.getByRole('button', { name: 'Node.js' }),
+    locator: (page: Page): Locator => page.getByRole('button', { name: 'Node.js' }),
     name: 'Node.js button',
   },
 
   {
-    locator: (page) => page.getByRole('link', { name: 'GitHub repository' }),
+    locator: (page: Page): Locator => page.getByRole('link', { name: 'GitHub repository' }),
     name: 'GitHub repository link',
     attribute: {
       type: 'href',
@@ -67,7 +78,7 @@ const elements = [
   },
 
   {
-    locator: (page) => page.getByRole('link', { name: 'Discord server' }),
+    locator: (page: Page): Locator => page.getByRole('link', { name: 'Discord server' }),
     name: 'Discord server link',
     attribute: {
       type: 'href',
@@ -76,12 +87,12 @@ const elements = [
   },
 
   {
-    locator: (page) => page.getByRole('button', { name: 'Switch between dark and light' }),
+    locator: (page: Page): Locator => page.getByRole('button', { name: 'Switch between dark and light' }),
     name: 'Switch between dark and light button',
   },
 
   {
-    locator: (page) => page.getByRole('button', { name: 'Search (Control+k)' }),
+    locator: (page: Page): Locator => page.getByRole('button', { name: 'Search (Control+k)' }),
     name: 'Search (Control+k) button',
   },
 ];
