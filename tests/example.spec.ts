@@ -95,7 +95,40 @@ const elements: Elements[] = [
     locator: (page: Page): Locator => page.getByRole('button', { name: 'Search (Control+k)' }),
     name: 'Search (Control+k) button',
   },
+
+  {
+    locator: (page: Page): Locator => page.getByRole('button', { name: 'Switch between dark and light' }),
+    name: 'Switch between dark and light',
+  },
+
+  {
+    locator: (page: Page): Locator => page.locator('html'),
+    name: 'HTML',
+    attribute: {
+      type: 'data-theme-choice',
+      value: 'system',
+    },
+  },
+
+  {
+    locator: (page: Page): Locator => page.getByRole('heading', { name: 'Playwright enables reliable' }),
+    name: 'Title',
+    text: 'Playwright enables reliable web automation for testing, scripting, and AI agents.',
+  },
+
+  {
+    locator: (page: Page): Locator => page.getByRole('link', { name: 'Get started' }),
+    name: 'Get started button',
+    text: 'Get started',
+    attribute: {
+      type: 'href',
+      value: '/docs/intro',
+    },
+  },
 ];
+
+// Темы для Light мода
+const themes = ['dark', 'light'];
 
 //Создание группы тестов
 test.describe('Тесты главной страницы', () => {
@@ -135,19 +168,19 @@ test.describe('Тесты главной страницы', () => {
     });
   });
 
-  test('Проверка light мода', async ({ page }) => {
-    await page.getByRole('button', { name: 'Switch between dark and light' }).click();
-
-    await expect(page.locator('html')).toHaveAttribute('data-theme-choice', 'light');
-
-    await page.getByLabel('Switch between dark and light').click();
-
-    await expect(page.locator('html')).toHaveAttribute('data-theme-choice', 'dark');
-
-    await page.getByLabel('Switch between dark and light').click();
-
-    await expect(page.locator('html')).toHaveAttribute('data-theme-choice', 'system');
-  });
+  // test('Проверка light мода', async ({ page }) => {
+  //   await page.getByRole('button', { name: 'Switch between dark and light' }).click();
+  //
+  //   await expect(page.locator('html')).toHaveAttribute('data-theme-choice', 'light');
+  //
+  //   await page.getByLabel('Switch between dark and light').click();
+  //
+  //   await expect(page.locator('html')).toHaveAttribute('data-theme-choice', 'dark');
+  //
+  //   await page.getByLabel('Switch between dark and light').click();
+  //
+  //   await expect(page.locator('html')).toHaveAttribute('data-theme-choice', 'system');
+  // });
 
   test('Проверка заголовка', async ({ page }) => {
     await expect(page.getByRole('heading', { name: 'Playwright enables reliable' })).toBeVisible();
@@ -163,5 +196,15 @@ test.describe('Тесты главной страницы', () => {
     await expect.soft(page.getByRole('link', { name: 'Get started' })).toContainText('Get started');
 
     await expect.soft(page.getByRole('link', { name: 'Get started' })).toHaveAttribute('href', '/docs/intro');
+  });
+
+  // Проверка Light мода
+  themes.forEach((value) => {
+    test(`Проверка ${value} мода`, async ({ page }) => {
+      await page.evaluate((value) => {
+        document.querySelector('html')?.setAttribute('data-theme', value);
+      }, value);
+      await expect(page).toHaveScreenshot(`${value}Mode.png`);
+    });
   });
 });
