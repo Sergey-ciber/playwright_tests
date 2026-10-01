@@ -1,4 +1,5 @@
 import { expect, Locator, Page, test } from '@playwright/test';
+import { MainPage } from '../models/MainPage';
 
 // Интерфейс для создания объектов с типом element
 interface Elements {
@@ -134,16 +135,14 @@ const themes = ['dark', 'light'];
 test.describe('Тесты главной страницы', () => {
   //Хук для открытия страницы
   test.beforeEach(async ({ page }) => {
-    await page.goto('https://playwright.dev/', { waitUntil: 'networkidle' });
+    // await page.goto('https://playwright.dev/', { waitUntil: 'networkidle' });
   });
 
   // Проверка отображения элементов навигации
   test('Проверка отображения элементов навигации хедера', async ({ page }) => {
-    elements.forEach(({ locator, name }) => {
-      test.step(`Проверка отображения элемента ${name}`, async () => {
-        await expect(locator(page)).toBeVisible();
-      });
-    });
+    const mainPage = new MainPage(page);
+    await mainPage.openMainPage();
+    await mainPage.CheckElementsVisibility();
   });
 
   // Проверка названия элементов навигации
