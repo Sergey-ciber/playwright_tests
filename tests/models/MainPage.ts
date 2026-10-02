@@ -11,11 +11,12 @@ interface Elements {
   };
 }
 
-// Создаем конструктор
+// Создаем класс MainPage
 export class MainPage {
   readonly page: Page;
   readonly elements: Elements[];
 
+  // Создаем конструктор
   constructor(page: Page) {
     this.page = page;
     this.elements = [
@@ -140,11 +141,63 @@ export class MainPage {
   }
 
   // Метод для проверки видимости элементов навигации
-  async CheckElementsVisibility() {
+  async checkElementsVisibility() {
     for (const { locator, name } of this.elements) {
       await test.step(`Проверка отображения элемента ${name}`, async () => {
         await expect(locator(this.page)).toBeVisible();
       });
     }
+  }
+
+  // Метод для проверки названия элементов навигации
+  async checkElementsName() {
+    for (const element of this.elements) {
+      if (element.text) {
+        await test.step(`Проверка текста у элемента ${element.name}`, async () => {
+          await expect(element.locator(this.page)).toContainText(element.text);
+        });
+      }
+    }
+  }
+
+  // Проверка ссылок элементов навигации
+  async checkElementsHref() {
+    for (const { name, locator, attribute } of this.elements) {
+      if (attribute?.type === 'href') {
+        await test.step(`Проверка ссылки элемента ${name}`, async () => {
+          await expect(locator(this.page)).toHaveAttribute(attribute.type, attribute.value);
+        });
+      }
+    }
+  }
+
+  // Нажатие на переключатель темы
+  async clickSwitchLightModeButton() {
+    await test.step('Нажатие на переключатель темы', async () => {
+      await this.page.getByRole('button', { name: 'Switch between dark and light' }).click();
+    });
+  }
+
+  // Проверка активной темы
+  async checkActiveTheme(activeTheme: string) {
+    await test.step(`Проверка активации темы ${activeTheme}`, async () => {
+      await expect(this.page.locator('html')).toHaveAttribute('data-theme-choice', activeTheme);
+    });
+  }
+
+  // Установка light / dark мода
+  async setLightMode(theme: string) {
+    await test.step(`Установка ${theme} мода`, async () => {
+      await this.page.evaluate((mode) => {
+        document.querySelector('html').setAttribute('data-theme', mode);
+      }, theme);
+    });
+  }
+
+  // Проверка темы на скриншоте
+  async checkThemeFromScreenshot(theme: string) {
+    await test.step(`Проверка ${theme} темы на скриншоте`, async () => {
+      await expect(this.page).toHaveScreenshot(`${theme}Mode.png`);
+    });
   }
 }
