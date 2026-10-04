@@ -200,4 +200,78 @@ export class MainPage {
       await expect(this.page).toHaveScreenshot(`${theme}Mode.png`);
     });
   }
+
+  // Получить текст главного заголовка
+  async getMainHeadingText(): Promise<string> {
+    const heading = this.page.getByRole('heading', { name: 'Playwright enables reliable' });
+    return await heading.textContent();
+  }
+
+  // Получить все ссылки навигации с их href
+  async getNavigationLinks(): Promise<{ name: string; href: string }[]> {
+    const nav = this.page.locator('nav');
+    const links = nav.locator('a');
+    const count = await links.count();
+    const result: { name: string; href: string }[] = [];
+    for (let i = 0; i < count; i++) {
+      const name = (await links.nth(i).getAttribute('aria-label')) ?? (await links.nth(i).textContent());
+      const href = await links.nth(i).getAttribute('href');
+      if (name && href) {
+        result.push({ name: name.trim(), href });
+      }
+    }
+    return result;
+  }
+
+  // Получить все ссылки на странице
+  async getAllLinks(): Promise<{ text: string; href: string; isExternal: boolean }[]> {
+    const anchors = this.page.locator('a[href]');
+    const count = await anchors.count();
+    const result: { text: string; href: string; isExternal: boolean }[] = [];
+    for (let i = 0; i < count; i++) {
+      const text = (await anchors.nth(i).textContent())?.trim() ?? '';
+      const href = (await anchors.nth(i).getAttribute('href')) ?? '';
+      const isExternal = href.startsWith('http') && !href.includes('playwright.dev');
+      result.push({ text, href, isExternal });
+    }
+    return result;
+  }
+
+  // Проверить адаптивность макета для заданного размера viewport
+  async checkResponsiveLayout(viewportWidth: number, viewportHeight: number): Promise<boolean> {
+    await this.page.setViewportSize({ width: viewportWidth, height: viewportHeight });
+    const body = this.page.locator('body');
+    const bodyWidth = await body.evaluate((el) => el.scrollWidth);
+    return bodyWidth <= viewportWidth;
+  }
+
+  // Получить meta-теги
+  async getMetaTags(): Promise<{ name: string; content: string }[]> {
+    return this.page.evaluate(() => {
+      const metas = document.querySelectorAll('meta[name], meta[property]');
+      return Array.from(metas).map((m) => ({
+        name: m.getAttribute('name') || m.getAttribute('property') || '',
+        content: m.getAttribute('content') || '',
+      }));
+    });
+  }
+
+  // Получить время загрузки страницы
+  async getPageLoadTime(): Promise<number> {
+    return await this.page.evaluate(() => {
+      const timing = performance.timing;
+      return timing.loadEventEnd - timing.navigationStart;
+    });
+  }
+
+  // Проверить наличие console errors
+  async getConsoleErrors(): Promise<string[]> {
+    const errors: string[] = [];
+    this.page.on('console', (msg) => {
+      if (msg.type() === 'error') {
+        errors.push(msg.text());
+      }
+    });
+    return errors;
+  }
 }
