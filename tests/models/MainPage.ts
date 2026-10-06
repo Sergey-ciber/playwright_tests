@@ -200,4 +200,16 @@ export class MainPage {
       await expect(this.page).toHaveScreenshot(`${theme}Mode.png`);
     });
   }
+
+  // Проверка тайтла
+  async checkTitle() {
+    await test.step('Проверка видимости тайтла', async () => {
+      await expect(this.page.getByRole('heading', { name: 'Playwright enables reliable' })).toBeVisible();
+    });
+    await test.step('Проверка текста тайтла', async () => {
+      await expect(this.page.getByRole('heading', { name: 'Playwright enables reliable' })).toHaveText(
+        'Playwright enables reliable web automation for testing, scripting, and AI agents.'
+      );
+    });
+  }
 }

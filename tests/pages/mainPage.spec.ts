@@ -35,4 +35,9 @@ test.describe('Тесты главной страницы', () => {
       await mainPage.checkThemeFromScreenshot(theme);
     }
   });
+
+  // Проверка тайтла
+  test('Проверка тайтла', async ({ mainPage }) => {
+    await mainPage.checkTitle();
+  });
 });
