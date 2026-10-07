@@ -1,0 +1,4 @@
+{
+  "authFilePath": "../playwright/.auth/user.json",
+  "createdBoards": "../../canbano/boardsData/createdBoards.json"
+}

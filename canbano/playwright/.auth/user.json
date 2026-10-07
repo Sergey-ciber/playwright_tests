@@ -1,0 +1,217 @@
+{
+  "cookies": [
+    {
+      "name": "tmr_lvid",
+      "value": "209ef14d58846a59087a1893381debb4",
+      "domain": ".kanbano.ru",
+      "path": "/",
+      "expires": 1820146887,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "tmr_lvidTS",
+      "value": "1791375687781",
+      "domain": ".kanbano.ru",
+      "path": "/",
+      "expires": 1820146887,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "domain_sid",
+      "value": "ayO1g12MWb4g1pvlXsgdZ%3A1791375687851",
+      "domain": "app.kanbano.ru",
+      "path": "/",
+      "expires": 1791980487.851395,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ym_uid",
+      "value": "1791375688277944595",
+      "domain": ".kanbano.ru",
+      "path": "/",
+      "expires": 1822911687,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ym_d",
+      "value": "1791375688",
+      "domain": ".kanbano.ru",
+      "path": "/",
+      "expires": 1822911687,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "yabs-sid",
+      "value": "1123205041791375687",
+      "domain": "mc.yandex.ru",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "i",
+      "value": "U7Yrkbs4wfViM6Zb7SYLgfMNSlU+dtk6d+y5xmWkO4oFwL9S32dBfLVhlPAgMPy4DkvPWdogwXYfQlo/+bQqNu7OP24=",
+      "domain": ".yandex.ru",
+      "path": "/",
+      "expires": 1825935687.946187,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "yandexuid",
+      "value": "9095443181791375687",
+      "domain": ".yandex.ru",
+      "path": "/",
+      "expires": 1825935687.946215,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "yuidss",
+      "value": "9095443181791375687",
+      "domain": ".yandex.ru",
+      "path": "/",
+      "expires": 1825935687.946233,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ymex",
+      "value": "2106735687.yrts.1791375687#2106735687.yrtsi.1791375687",
+      "domain": ".yandex.ru",
+      "path": "/",
+      "expires": 1822911687,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ym_isad",
+      "value": "2",
+      "domain": ".kanbano.ru",
+      "path": "/",
+      "expires": 1791447687,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "bh",
+      "value": "EkEiSGVhZGxlc3NDaHJvbWUiO3Y9IjE1MyIsICJOb3RfQSBCcmFuZCI7dj0iOCIsICJDaHJvbWl1bSI7dj0iMTUzIhoDeDg2Ig0xNTMuMC44MDEwLjEyKgI/MDoJIldpbmRvd3MiQgYxMC4wLjBKAjY0UlkiSGVhZGxlc3NDaHJvbWUiO3Y9IjE1My4wLjgwMTAuMTIiLCJOb3RfQSBCcmFuZCI7dj0iOC4wLjAuMCIsIkNocm9taXVtIjt2PSIxNTMuMC44MDEwLjEyImDH8pjWBmoe3Mrh/wiS2KGxA5/P4eoD+/rw5w3r//32D4iZzYcI",
+      "domain": ".yandex.ru",
+      "path": "/",
+      "expires": 1825935687,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ym_visorc",
+      "value": "w",
+      "domain": ".kanbano.ru",
+      "path": "/",
+      "expires": 1791377488,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "mdd",
+      "value": "1",
+      "domain": ".kanbano.ru",
+      "path": "/",
+      "expires": 1791462088,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "access_token",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsidXNlcklkIjoyMTE5fSwiZW1haWwiOiJtc2VyZy05MEBtYWlsLnJ1IiwianRpIjoicWZ2Y3dXZGF3MTdfTFoxY0xTRUlqIiwiaWF0IjoxNzkxMzc1Njg4LCJleHAiOjE3OTE0NjIwODh9.2IxfEqjDEVcTqdQL4uEewSnANNDml4pK5M3Cm-QAIOM",
+      "domain": "app.kanbano.ru",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://app.kanbano.ru",
+      "localStorage": [
+        {
+          "name": "_ym_synced",
+          "value": "{}"
+        },
+        {
+          "name": "rb_sync_id",
+          "value": "{\"time\":1791375687851,\"fpid\":\"ayO1g12MWb4g1pvlXsgdZ\",\"metricsTime\":1791375687852}"
+        },
+        {
+          "name": "_ym_wv2rf:110283393:0",
+          "value": "1"
+        },
+        {
+          "name": "_ym_retryReqs",
+          "value": "{}"
+        },
+        {
+          "name": "tmr_lvidTS",
+          "value": "1791375687781"
+        },
+        {
+          "name": "current-user",
+          "value": "{\"id\":2119,\"name\":\"Макарошка\",\"email\":\"mserg-90@mail.ru\",\"avatar\":null,\"isDeleted\":false}"
+        },
+        {
+          "name": "_ym110283393_lsid",
+          "value": "1681541704824"
+        },
+        {
+          "name": "tmr_trgfpid",
+          "value": "{\"fpid\":null,\"ts\":1791375687850}"
+        },
+        {
+          "name": "tmr_reqNum",
+          "value": "3"
+        },
+        {
+          "name": "_ym110283393:0_reqNum",
+          "value": "2"
+        },
+        {
+          "name": "_ym_uid",
+          "value": "\"1791375688277944595\""
+        },
+        {
+          "name": "tmr_lvid",
+          "value": "209ef14d58846a59087a1893381debb4"
+        },
+        {
+          "name": "access_token",
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsidXNlcklkIjoyMTE5fSwiZW1haWwiOiJtc2VyZy05MEBtYWlsLnJ1IiwianRpIjoicWZ2Y3dXZGF3MTdfTFoxY0xTRUlqIiwiaWF0IjoxNzkxMzc1Njg4LCJleHAiOjE3OTE0NjIwODh9.2IxfEqjDEVcTqdQL4uEewSnANNDml4pK5M3Cm-QAIOM"
+        },
+        {
+          "name": "refresh_token",
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsidXNlcklkIjoyMTE5fSwiZW1haWwiOiJtc2VyZy05MEBtYWlsLnJ1IiwianRpIjoiLVhQRkZHNmNBbUNVWkhnT09HOUpKIiwiaWF0IjoxNzkxMzc1Njg4LCJleHAiOjE4MDY5Mjc2ODh9.-2PPMMSSMWCSN7M78U0GlOK-IJWiqrG_Z04TlB8sOLc"
+        }
+      ]
+    }
+  ]
+}

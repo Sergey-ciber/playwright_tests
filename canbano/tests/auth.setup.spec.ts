@@ -1,17 +1,27 @@
 import { test as setup, expect } from '@playwright/test';
 import path from 'path';
-import authSetupSetting from './authSetupSettings.json';
-import userInfo from '../../playwright/userInfo.json';
+import canbanoAuthPath from '../canbanoAuthPath.json';
+import usersInfo from '../playwright/.auth/usersInfo.json';
 
-const authFile = path.join(__dirname, authSetupSetting.authFilePath);
+const authFile = path.join(__dirname, canbanoAuthPath.authFilePath);
+type User = {
+  name: string;
+  email: string;
+  password: string;
+};
+
+const user: User = {
+  name: usersInfo.user_1.name,
+  email: usersInfo.user_1.email,
+  password: usersInfo.user_1.password,
+};
 
 setup('authenticate', async ({ page }) => {
   // Perform authentication steps. Replace these actions with your own.
   await page.goto('https://app.kanbano.ru/login');
-  await expect(page.getByText('Вход', { exact: true })).toBeVisible();
-  await page.getByRole('textbox', { name: 'Email' }).fill(userInfo.userCredentials.username);
-  await page.getByRole('textbox', { name: 'Пароль' }).fill(userInfo.userCredentials.password);
-  await page.getByRole('button', { name: 'Войти' }).click();
+  await page.getByRole('textbox', { name: 'Email' }).fill(user.email);
+  await page.getByRole('textbox', { name: 'Пароль' }).fill(user.password);
+  await page.locator('[data-test="submit-button"]').click();
   // Wait until the page receives the cookies.
   //
   // Sometimes login flow sets cookies in the process of several redirects.

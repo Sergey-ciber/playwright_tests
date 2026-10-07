@@ -35,18 +35,30 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
-    // Setup project
-    { name: 'setup', testMatch: /.*\.setup\.spec\.ts/ },
-
     {
       name: 'chromium',
-      testIgnore: /.*\.setup\.spec\.ts/,
       use: {
         ...devices['Desktop Chrome'],
-        // Use prepared auth state.
-        storageState: 'playwright/.auth/user.json',
       },
+    },
+
+    // Проект Canbano
+    {
+      name: 'Canbano Tests',
+      testMatch: /.*\.spec\.ts/,
+      testDir: './canbano/tests', // Вторая папка
+      testIgnore: /.*auth\.setup\.spec\.ts/,
       dependencies: ['setup'],
+      use: {
+        storageState: 'canbano/playwright/.auth/user.json',
+      },
+    },
+
+    //Сетап проект для Canbano
+    {
+      name: 'setup',
+      testMatch: /.*auth\.setup\.spec\.ts/,
+      testDir: './canbano/tests', // Вторая папка
     },
 
     // {
