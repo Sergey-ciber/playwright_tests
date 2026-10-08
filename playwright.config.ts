@@ -1,5 +1,6 @@
 import { defineConfig, devices } from '@playwright/test';
-
+import dotenv from 'dotenv';
+import path from 'path';
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
@@ -51,6 +52,7 @@ export default defineConfig({
       dependencies: ['setup'],
       use: {
         storageState: 'canbano/playwright/.auth/user.json',
+        baseURL: process.env.BASE_URL ?? 'https://app.kanbano.ru',
       },
     },
 

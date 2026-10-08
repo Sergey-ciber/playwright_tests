@@ -2,57 +2,47 @@
   "cookies": [
     {
       "name": "tmr_lvid",
-      "value": "209ef14d58846a59087a1893381debb4",
+      "value": "beff13421683d3ad48d56d4c6bc35ed8",
       "domain": ".kanbano.ru",
       "path": "/",
-      "expires": 1820146887,
+      "expires": 1820221877,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "tmr_lvidTS",
-      "value": "1791375687781",
+      "value": "1791450677541",
       "domain": ".kanbano.ru",
       "path": "/",
-      "expires": 1820146887,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "domain_sid",
-      "value": "ayO1g12MWb4g1pvlXsgdZ%3A1791375687851",
-      "domain": "app.kanbano.ru",
-      "path": "/",
-      "expires": 1791980487.851395,
+      "expires": 1820221877,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ym_uid",
-      "value": "1791375688277944595",
+      "value": "1791450678557326398",
       "domain": ".kanbano.ru",
       "path": "/",
-      "expires": 1822911687,
+      "expires": 1822986677,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "_ym_d",
-      "value": "1791375688",
+      "value": "1791450678",
       "domain": ".kanbano.ru",
       "path": "/",
-      "expires": 1822911687,
+      "expires": 1822986677,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "yabs-sid",
-      "value": "1123205041791375687",
+      "value": "698294811791450679",
       "domain": "mc.yandex.ru",
       "path": "/",
       "expires": -1,
@@ -62,40 +52,40 @@
     },
     {
       "name": "i",
-      "value": "U7Yrkbs4wfViM6Zb7SYLgfMNSlU+dtk6d+y5xmWkO4oFwL9S32dBfLVhlPAgMPy4DkvPWdogwXYfQlo/+bQqNu7OP24=",
+      "value": "e++80v5H4dIjztCAPtbcwpoXm+PkB1CFyhIIOQnK3OKHzA2avZcgASYVNlf/vGGUJrBiAFCOv4DVxpyebkT7EBSWQaQ=",
       "domain": ".yandex.ru",
       "path": "/",
-      "expires": 1825935687.946187,
+      "expires": 1826010677.917499,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "yandexuid",
-      "value": "9095443181791375687",
+      "value": "5901487901791450679",
       "domain": ".yandex.ru",
       "path": "/",
-      "expires": 1825935687.946215,
+      "expires": 1826010677.917527,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "yuidss",
-      "value": "9095443181791375687",
+      "value": "5901487901791450679",
       "domain": ".yandex.ru",
       "path": "/",
-      "expires": 1825935687.946233,
+      "expires": 1826010677.917546,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "ymex",
-      "value": "2106735687.yrts.1791375687#2106735687.yrtsi.1791375687",
+      "value": "2106810679.yrts.1791450679#2106810679.yrtsi.1791450679",
       "domain": ".yandex.ru",
       "path": "/",
-      "expires": 1822911687,
+      "expires": 1822986679,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
@@ -105,17 +95,17 @@
       "value": "2",
       "domain": ".kanbano.ru",
       "path": "/",
-      "expires": 1791447687,
+      "expires": 1791522677,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "bh",
-      "value": "EkEiSGVhZGxlc3NDaHJvbWUiO3Y9IjE1MyIsICJOb3RfQSBCcmFuZCI7dj0iOCIsICJDaHJvbWl1bSI7dj0iMTUzIhoDeDg2Ig0xNTMuMC44MDEwLjEyKgI/MDoJIldpbmRvd3MiQgYxMC4wLjBKAjY0UlkiSGVhZGxlc3NDaHJvbWUiO3Y9IjE1My4wLjgwMTAuMTIiLCJOb3RfQSBCcmFuZCI7dj0iOC4wLjAuMCIsIkNocm9taXVtIjt2PSIxNTMuMC44MDEwLjEyImDH8pjWBmoe3Mrh/wiS2KGxA5/P4eoD+/rw5w3r//32D4iZzYcI",
+      "value": "EkEiSGVhZGxlc3NDaHJvbWUiO3Y9IjE1MyIsICJOb3RfQSBCcmFuZCI7dj0iOCIsICJDaHJvbWl1bSI7dj0iMTUzIhoDeDg2Ig0xNTMuMC44MDEwLjEyKgI/MDoJIldpbmRvd3MiQgYxMC4wLjBKAjY0UlkiSGVhZGxlc3NDaHJvbWUiO3Y9IjE1My4wLjgwMTAuMTIiLCJOb3RfQSBCcmFuZCI7dj0iOC4wLjAuMCIsIkNocm9taXVtIjt2PSIxNTMuMC44MDEwLjEyImC3vJ3WBmoe3Mrh/wiS2KGxA5/P4eoD+/rw5w3r//32D4iZzYcI",
       "domain": ".yandex.ru",
       "path": "/",
-      "expires": 1825935687,
+      "expires": 1826010677.953564,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
@@ -125,27 +115,47 @@
       "value": "w",
       "domain": ".kanbano.ru",
       "path": "/",
-      "expires": 1791377488,
+      "expires": 1791452477,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
+    },
+    {
+      "name": "domain_sid",
+      "value": "BqSGgA_DvArFOALohfbtM%3A1791450678630",
+      "domain": "app.kanbano.ru",
+      "path": "/",
+      "expires": 1792055478.630762,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
     },
     {
       "name": "mdd",
       "value": "1",
       "domain": ".kanbano.ru",
       "path": "/",
-      "expires": 1791462088,
+      "expires": 1791537078,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "access_token",
-      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsidXNlcklkIjoyMTE5fSwiZW1haWwiOiJtc2VyZy05MEBtYWlsLnJ1IiwianRpIjoicWZ2Y3dXZGF3MTdfTFoxY0xTRUlqIiwiaWF0IjoxNzkxMzc1Njg4LCJleHAiOjE3OTE0NjIwODh9.2IxfEqjDEVcTqdQL4uEewSnANNDml4pK5M3Cm-QAIOM",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsidXNlcklkIjoyMTE5fSwiZW1haWwiOiJtc2VyZy05MEBtYWlsLnJ1IiwianRpIjoiUWZLeXZNalBiYlZ6d2l1SmtXbS1VIiwiaWF0IjoxNzkxNDUwNjgwLCJleHAiOjE3OTE1MzcwODB9.dNrhCvF2_ZP9L1Ws0zqHmCvuPdfzjedKbMjt3Ws2RbE",
       "domain": "app.kanbano.ru",
       "path": "/",
       "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "tmr_detect",
+      "value": "0%7C1791450679889",
+      "domain": "app.kanbano.ru",
+      "path": "/",
+      "expires": 1791537079,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -161,7 +171,7 @@
         },
         {
           "name": "rb_sync_id",
-          "value": "{\"time\":1791375687851,\"fpid\":\"ayO1g12MWb4g1pvlXsgdZ\",\"metricsTime\":1791375687852}"
+          "value": "{\"time\":1791450678630,\"fpid\":\"BqSGgA_DvArFOALohfbtM\",\"metricsTime\":1791450678632}"
         },
         {
           "name": "_ym_wv2rf:110283393:0",
@@ -173,7 +183,7 @@
         },
         {
           "name": "tmr_lvidTS",
-          "value": "1791375687781"
+          "value": "1791450677541"
         },
         {
           "name": "current-user",
@@ -181,15 +191,15 @@
         },
         {
           "name": "_ym110283393_lsid",
-          "value": "1681541704824"
-        },
-        {
-          "name": "tmr_trgfpid",
-          "value": "{\"fpid\":null,\"ts\":1791375687850}"
+          "value": "224978026872"
         },
         {
           "name": "tmr_reqNum",
           "value": "3"
+        },
+        {
+          "name": "tmr_trgfpid",
+          "value": "{\"fpid\":null,\"ts\":1791450678628}"
         },
         {
           "name": "_ym110283393:0_reqNum",
@@ -197,19 +207,19 @@
         },
         {
           "name": "_ym_uid",
-          "value": "\"1791375688277944595\""
+          "value": "\"1791450678557326398\""
         },
         {
           "name": "tmr_lvid",
-          "value": "209ef14d58846a59087a1893381debb4"
+          "value": "beff13421683d3ad48d56d4c6bc35ed8"
         },
         {
           "name": "access_token",
-          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsidXNlcklkIjoyMTE5fSwiZW1haWwiOiJtc2VyZy05MEBtYWlsLnJ1IiwianRpIjoicWZ2Y3dXZGF3MTdfTFoxY0xTRUlqIiwiaWF0IjoxNzkxMzc1Njg4LCJleHAiOjE3OTE0NjIwODh9.2IxfEqjDEVcTqdQL4uEewSnANNDml4pK5M3Cm-QAIOM"
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsidXNlcklkIjoyMTE5fSwiZW1haWwiOiJtc2VyZy05MEBtYWlsLnJ1IiwianRpIjoiUWZLeXZNalBiYlZ6d2l1SmtXbS1VIiwiaWF0IjoxNzkxNDUwNjgwLCJleHAiOjE3OTE1MzcwODB9.dNrhCvF2_ZP9L1Ws0zqHmCvuPdfzjedKbMjt3Ws2RbE"
         },
         {
           "name": "refresh_token",
-          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsidXNlcklkIjoyMTE5fSwiZW1haWwiOiJtc2VyZy05MEBtYWlsLnJ1IiwianRpIjoiLVhQRkZHNmNBbUNVWkhnT09HOUpKIiwiaWF0IjoxNzkxMzc1Njg4LCJleHAiOjE4MDY5Mjc2ODh9.-2PPMMSSMWCSN7M78U0GlOK-IJWiqrG_Z04TlB8sOLc"
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsidXNlcklkIjoyMTE5fSwiZW1haWwiOiJtc2VyZy05MEBtYWlsLnJ1IiwianRpIjoiblZpY2dTODNEUkl6WHhjZTQ1ZnBFIiwiaWF0IjoxNzkxNDUwNjgwLCJleHAiOjE4MDcwMDI2ODB9.HHylkL51unkwwB4VX9aQUnbNQ7F8gn2Ym4oXmLNG9xk"
         }
       ]
     }
